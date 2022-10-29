@@ -1,0 +1,19 @@
+{
+"testdata":[
+	{
+	"flag":"createnewportfolio",
+	"data":[
+		{"portfolioname":"SKTest29092215",
+		"runmode":"Y"},
+		{"portfolioname":"SKTest29092216",
+		"runmode":"Y"}]
+	},
+	{
+	"flag":"deletenewportfolio",
+	"data":[
+	{"portfolioname":"SKTest29092211",
+	"runmode":"Y"}
+	]
+	}
+		]
+}

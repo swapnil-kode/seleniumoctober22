@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Portfolio Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Delete Portfolio Test(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="deletePortfolio"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+      <class name="testcases.rediff.Session">
+        <methods>
+          <include name="doLogin" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.Session -->
+    </classes>
+  </test> <!-- Delete Portfolio Test(failed) -->
+  <test thread-count="5" verbose="0" name="Create Portfolio Test(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+          <include name="createPortfolio"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+      <class name="testcases.rediff.Session">
+        <methods>
+          <include name="doLogin" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.Session -->
+    </classes>
+  </test> <!-- Create Portfolio Test(failed) -->
+</suite> <!-- Failed suite [Portfolio Suite] -->

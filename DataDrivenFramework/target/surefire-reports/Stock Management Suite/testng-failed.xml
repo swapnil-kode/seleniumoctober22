@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Stock Management Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Create Stock Test(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.rediff.Session">
+        <methods>
+          <include name="doLogin" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.Session -->
+      <class name="testcases.rediff.StockManagement">
+        <methods>
+          <include name="addFreshStock"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.StockManagement -->
+    </classes>
+  </test> <!-- Create Stock Test(failed) -->
+</suite> <!-- Failed suite [Stock Management Suite] -->

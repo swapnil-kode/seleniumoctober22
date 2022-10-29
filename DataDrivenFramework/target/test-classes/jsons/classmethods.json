@@ -1,0 +1,12 @@
+{
+"classdetails":[
+{
+"class":"testcases.rediff.Session",
+"methods":["doLogin"]
+},
+{
+"class":"testcases.rediff.PortfolioManagement",
+"methods":["createPortfolio","deletePortfolio"]
+}
+]
+}

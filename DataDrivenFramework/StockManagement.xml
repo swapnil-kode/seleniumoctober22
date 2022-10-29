@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stock Management Suite">
+  <test name="Create Stock Test">
+    <classes>
+    	<class name="testcases.rediff.Session">
+    		<methods>
+    			<include name="doLogin"/>
+    		</methods>
+    	</class>
+      	<class name="testcases.rediff.StockManagement">
+      		<methods>
+      		<include name="addFreshStock"/>
+      		</methods>
+      	</class>
+    	</classes>
+  </test> <!-- Test -->
+</suite> <!-- PortfolioSuite -->

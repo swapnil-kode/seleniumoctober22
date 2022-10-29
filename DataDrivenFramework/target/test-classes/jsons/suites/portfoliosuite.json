@@ -1,0 +1,35 @@
+{
+"suitename":"Portfolio Suite",
+	"testcases":[
+	{
+	"name":"Create Portfolio",
+	"parameters":["Localpara1"],
+	"executions":[
+		{
+		"executionname":"Create new portfolio 1st run",
+		"dataflag":"createnewportfolio",
+		"parametervalues":["Localpara2"],
+		"methods":["doLogin","createPortfolio"]
+		},
+		{
+		"executionname":"Create portfolio 2nd run",
+		"dataflag":"createnewportfolio",
+		"parametervalues":["Localpara2"],
+		"methods":["doLogin","createPortfolio"]
+		}
+		]
+	},
+	{
+	"name":"Delete Portfolio",
+	"parameters":["Localpara3"],
+	"executions":[
+		{
+		"executionname":"Delete portfolio",
+		"dataflag":"deletenewportfolio"
+		"parametervalues":["Localpara3"],
+		"methods":["deletePortfolio"]
+		}
+	]
+	}
+]
+}
