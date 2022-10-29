@@ -6,13 +6,7 @@
 	"parameters":["Localpara1"],
 	"executions":[
 		{
-		"executionname":"Create new portfolio 1st run",
-		"dataflag":"createnewportfolio",
-		"parametervalues":["Localpara2"],
-		"methods":["doLogin","createPortfolio"]
-		},
-		{
-		"executionname":"Create portfolio 2nd run",
+		"executionname":"Create new portfolio",
 		"dataflag":"createnewportfolio",
 		"parametervalues":["Localpara2"],
 		"methods":["doLogin","createPortfolio"]

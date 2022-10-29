@@ -40,6 +40,7 @@ public class JSONRunner {
 			testng.createSuite(name, pTest);
 			
 			String suitePath = System.getProperty("user.dir")+"//src//test//resources//jsons//"+suitesfilename;
+			String dataPath = System.getProperty("user.dir")+"//src//test//resources//jsons//"+testdatajsonfile;
 			JSONParser suiteparser = new JSONParser();
 			JSONObject suiteObject = (JSONObject)suiteparser.parse(new FileReader(new File(suitePath)));
 			JSONArray suiteArray = (JSONArray)suiteObject.get("testcases");
@@ -54,7 +55,7 @@ public class JSONRunner {
 					JSONObject execution = (JSONObject)executions.get(eid);
 					String executionname = (String)execution.get("executionname");
 					String dataflag = (String)execution.get("dataflag");
-					int iteration = new DataUtil().getTestDataIterations(testdatajsonfile, dataflag);
+					int iteration = new DataUtil().getTestDataIterations(dataPath, dataflag);
 					for(int j=0;j<iteration;j++)
 					{
 					JSONArray parametervalues = (JSONArray)execution.get("parametervalues");

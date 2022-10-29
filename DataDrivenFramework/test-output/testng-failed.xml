@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Portfolio Suite]">
-  <test thread-count="5" name="Create Portfolio-Create new portfolio 1st run(failed)">
-    <parameter name="Localpara1" value="Localpara2"/>
-    <classes>
-      <class name="testcases.rediff.PortfolioManagement">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="quit"/>
-          <include name="createPortfolio"/>
-        </methods>
-      </class> <!-- testcases.rediff.PortfolioManagement -->
-    </classes>
-  </test> <!-- Create Portfolio-Create new portfolio 1st run(failed) -->
-  <test thread-count="5" name="Create Portfolio-Create portfolio 2nd run(failed)">
-    <parameter name="Localpara1" value="Localpara2"/>
-    <classes>
-      <class name="testcases.rediff.PortfolioManagement">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="quit"/>
-          <include name="createPortfolio"/>
-        </methods>
-      </class> <!-- testcases.rediff.PortfolioManagement -->
-    </classes>
-  </test> <!-- Create Portfolio-Create portfolio 2nd run(failed) -->
-  <test thread-count="5" name="Delete Portfolio-Delete portfolio(failed)">
-    <parameter name="Localpara3" value="Localpara3"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="testcases.rediff.PortfolioManagement">
         <methods>
@@ -36,8 +9,9 @@
           <include name="beforeTest"/>
           <include name="deletePortfolio"/>
           <include name="quit"/>
+          <include name="createPortfolio"/>
         </methods>
       </class> <!-- testcases.rediff.PortfolioManagement -->
     </classes>
-  </test> <!-- Delete Portfolio-Delete portfolio(failed) -->
-</suite> <!-- Failed suite [Portfolio Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
